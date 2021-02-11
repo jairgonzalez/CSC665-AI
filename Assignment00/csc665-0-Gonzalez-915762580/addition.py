@@ -20,8 +20,10 @@ Run python autograder.py
 def add(a, b):
     "Return the sum of a and b"
     "*** YOUR CODE HERE ***"
+    # simply assigning a new variable called sum which is the 
+    # addition of A + B 
     sum = a + b 
     
     
-
+# returning our sum 
     return sum

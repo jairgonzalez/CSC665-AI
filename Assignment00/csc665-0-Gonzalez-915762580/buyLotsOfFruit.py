@@ -34,8 +34,12 @@ def buyLotsOfFruit(orderList):
 
     Returns cost of order
     """
+    # I set a floating point variable that I will return later
     totalCost = 0.0
-
+    # simple nest for loop that iterate through the number of pounds 
+    # with the prices of fruits, each time I get a matching fuit from 
+    # order list, I multiply the numper of pounds with the price and 
+    # add that to our total cost 
     for fruit, numpounds in orderList:
         for x, y in fruitPrices.items():
             if (fruit == x):

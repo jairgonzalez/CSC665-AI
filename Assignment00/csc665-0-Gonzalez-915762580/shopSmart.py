@@ -4,7 +4,7 @@
 # educational purposes provided that (1) you do not distribute or publish
 # solutions, (2) you retain this notice, and (3) you provide clear
 # attribution to UC Berkeley, including a link to http://ai.berkeley.edu.
-# 
+#
 # Attribution Information: The Pacman AI projects were developed at UC Berkeley.
 # The core projects and autograders were primarily created by John DeNero
 # (denero@cs.berkeley.edu) and Dan Klein (klein@cs.berkeley.edu).
@@ -30,14 +30,30 @@ def shopSmart(orderList, fruitShops):
         fruitShops: List of FruitShops
     """
     "*** YOUR CODE HERE ***"
-    previous = 0.0
-    current= 0.0
+    # delcaring our best shop variable that I will use to return
+    Cheapshop = None
+    # using two varaibles to compare prices, the current cost 
+    # and the previous cost, I have to set previous cost to 0.0
+    # because I can't compare none with a floating point
+    Currentcost = None
+    Previouscost = 0.0
+    # I iterate through the shops each time gettting the cost of
+    # the total price of our order 
+    for shop in fruitShops:
+        Currentcost = shop.getPriceOfOrder(orderList)
+    # if statement checks if out previous cost was cheaper than our 
+    # current cost, if so we set out previous to our current 
+    # and continue iterating through the shops
+        if Currentcost > Previouscost and Previouscost != 0.0:
+            Previouscost = Currentcost
+       # our else statement is if the current cost is the best
+       # so we set our previous to the current and the current shop 
+       # that we are on is our best shop
+        else:
+                Previouscost = Currentcost
+                Cheapshop = shop
 
-    for fruit, numPounds in orderList:
-        for shop in shops:
-            for x in shop: 
-
-    return None
+    return Cheapshop
 
 
 if __name__ == '__main__':
@@ -48,6 +64,8 @@ if __name__ == '__main__':
     dir2 = {'apples': 1.0, 'oranges': 5.0}
     shop2 = shop.FruitShop('shop2', dir2)
     shops = [shop1, shop2]
-    print("For orders ", orders, ", the best shop is", shopSmart(orders, shops).getName())
+    print("For orders ", orders, ", the best shop is",
+          shopSmart(orders, shops).getName())
     orders = [('apples', 3.0)]
-    print("For orders: ", orders, ", the best shop is", shopSmart(orders, shops).getName())
+    print("For orders: ", orders, ", the best shop is",
+          shopSmart(orders, shops).getName())
