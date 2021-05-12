@@ -1,6 +1,6 @@
 # Artificial Intelligence - Homework 0
 ### Name: Jair Gonzalez
-### Student ID: 915762580
+### Student ID: 
 
 ## Description: This assignment required adding code to 3 python files that exercised our familiarity with syntax and data structures in Python programming language. 
 

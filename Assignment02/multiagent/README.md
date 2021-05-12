@@ -1,6 +1,6 @@
 # Artificial Intelligence - Homework 2
 ### Name: Jair Gonzalez
-### Student ID: 915762580
+### Student ID: 
 
 ## Description: Assignment consisted of working on 4 areas in MultiAgent.py including Reflex Agent, MiniMax, Expectimax and Evaluation Function 
 
