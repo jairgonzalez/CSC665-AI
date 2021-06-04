@@ -16,4 +16,4 @@ Assignment 3: MDP and Reinforcement Learning
 Assignment 4: Probability and Bayes Net
 Assignment 5: Machine Learning
 ```
-### I do not condone academic cheating or plagiarism in any form, files are posted for personal ventures and achievements. For any further requests please contact jairgonzalezrivas98@gmail.com
+### I do not condone academic dishonesty or plagiarism in any form, files are posted for personal ventures and achievements. For any further requests please contact jairgonzalezrivas98@gmail.com
